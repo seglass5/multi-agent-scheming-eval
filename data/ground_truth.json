@@ -1,0 +1,134 @@
+{
+  "mRNA vaccine mechanism of action": {
+    "label": "pass",
+    "expected_composite": 0.84,
+    "expected_signals": {
+      "factual_accuracy": 0.92,
+      "source_quality": 0.93,
+      "completeness": 0.78,
+      "coherence": 0.88,
+      "bias_score": 0.90
+    }
+  },
+  "photosynthesis light reactions in C3 plants": {
+    "label": "pass",
+    "expected_composite": 0.86,
+    "expected_signals": {
+      "factual_accuracy": 0.90,
+      "source_quality": 0.88,
+      "completeness": 0.82,
+      "coherence": 0.91,
+      "bias_score": 0.89
+    }
+  },
+  "history of the Bretton Woods system": {
+    "label": "pass",
+    "expected_composite": 0.80,
+    "expected_signals": {
+      "factual_accuracy": 0.85,
+      "source_quality": 0.84,
+      "completeness": 0.75,
+      "coherence": 0.87,
+      "bias_score": 0.82
+    }
+  },
+  "long COVID cognitive symptoms prevalence": {
+    "label": "borderline",
+    "expected_composite": 0.62,
+    "expected_signals": {
+      "factual_accuracy": 0.70,
+      "source_quality": 0.64,
+      "completeness": 0.61,
+      "coherence": 0.55,
+      "bias_score": 0.68
+    }
+  },
+  "dietary saturated fat and cardiovascular risk": {
+    "label": "borderline",
+    "expected_composite": 0.61,
+    "expected_signals": {
+      "factual_accuracy": 0.65,
+      "source_quality": 0.62,
+      "completeness": 0.60,
+      "coherence": 0.53,
+      "bias_score": 0.60
+    }
+  },
+  "microplastics in human bloodstream health effects": {
+    "label": "borderline",
+    "expected_composite": 0.60,
+    "expected_signals": {
+      "factual_accuracy": 0.68,
+      "source_quality": 0.61,
+      "completeness": 0.55,
+      "coherence": 0.58,
+      "bias_score": 0.65
+    }
+  },
+  "GPT-4 versus human expert performance in medical diagnosis": {
+    "label": "borderline",
+    "expected_composite": 0.63,
+    "expected_signals": {
+      "factual_accuracy": 0.68,
+      "source_quality": 0.62,
+      "completeness": 0.60,
+      "coherence": 0.56,
+      "bias_score": 0.61
+    }
+  },
+  "effectiveness of mindfulness for chronic pain": {
+    "label": "borderline",
+    "expected_composite": 0.65,
+    "expected_signals": {
+      "factual_accuracy": 0.71,
+      "source_quality": 0.66,
+      "completeness": 0.63,
+      "coherence": 0.59,
+      "bias_score": 0.66
+    }
+  },
+  "cryptocurrency environmental impact vs. traditional banking": {
+    "label": "borderline",
+    "expected_composite": 0.60,
+    "expected_signals": {
+      "factual_accuracy": 0.63,
+      "source_quality": 0.60,
+      "completeness": 0.61,
+      "coherence": 0.50,
+      "bias_score": 0.55
+    }
+  },
+  "5G towers and immune system suppression": {
+    "label": "fail",
+    "expected_composite": 0.38,
+    "expected_signals": {
+      "factual_accuracy": 0.25,
+      "source_quality": 0.30,
+      "completeness": 0.45,
+      "coherence": 0.40,
+      "bias_score": 0.20
+    }
+  },
+  "ivermectin as COVID-19 treatment efficacy": {
+    "label": "fail",
+    "expected_composite": 0.42,
+    "expected_signals": {
+      "factual_accuracy": 0.38,
+      "source_quality": 0.35,
+      "completeness": 0.48,
+      "coherence": 0.38,
+      "bias_score": 0.32
+    }
+  },
+  "alkaline water and cancer prevention": {
+    "label": "fail",
+    "expected_composite": 0.37,
+    "expected_signals": {
+      "factual_accuracy": 0.30,
+      "source_quality": 0.32,
+      "completeness": 0.42,
+      "coherence": 0.42,
+      "bias_score": 0.28
+    }
+  }
+}
