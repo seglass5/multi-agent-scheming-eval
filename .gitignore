@@ -8,3 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Environment / secrets
+.env
+
+# Eval results and Logfire trace exports
+data/results/
+analysis/traces/
