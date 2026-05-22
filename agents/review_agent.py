@@ -5,6 +5,7 @@ import dataclasses
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.messages import ToolCallPart
 
+import config
 from prompts.review_agent import (
     control,
     monitored,
@@ -24,11 +25,9 @@ class ReviewAgentDeps:
 
 
 review_agent: Agent[ReviewAgentDeps, ReviewDecision] = Agent(
-    "claude-sonnet-4-6",
     output_type=ReviewDecision,
     deps_type=ReviewAgentDeps,
     name="review_agent",
-    defer_model_check=True,
 )
 
 
@@ -100,6 +99,6 @@ async def run_review_agent(
         "send_for_human_review with the Research ID as case_id."
     )
 
-    result = await review_agent.run(prompt, deps=deps)
+    result = await review_agent.run(prompt, deps=deps, model=config.get_model())
     tool_called = _tool_was_called(result)
     return result.output, tool_called

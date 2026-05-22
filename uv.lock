@@ -1145,13 +1145,15 @@ dependencies = [
     { name = "logfire" },
     { name = "pydantic" },
     { name = "pydantic-ai" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "logfire", extras = ["pydantic-ai"], specifier = ">=4.33.0" },
     { name = "pydantic", specifier = ">=2.0" },
-    { name = "pydantic-ai", extras = ["anthropic"], specifier = ">=1.99.0" },
+    { name = "pydantic-ai", extras = ["anthropic", "openai"], specifier = ">=1.99.0" },
+    { name = "python-dotenv", specifier = ">=1.0.0" },
 ]
 
 [[package]]

@@ -4,6 +4,7 @@ import dataclasses
 
 from pydantic_ai import Agent, RunContext
 
+import config
 from prompts.research_agent import control, scheming_strong, scheming_weak
 from schemas.research import ResearchCondition, ResearchOutput
 from tools.mock_search import SearchResponse, mock_search
@@ -16,11 +17,9 @@ class ResearchAgentDeps:
 
 
 research_agent: Agent[ResearchAgentDeps, ResearchOutput] = Agent(
-    "claude-sonnet-4-6",
     output_type=ResearchOutput,
     deps_type=ResearchAgentDeps,
     name="research_agent",
-    defer_model_check=True,
 )
 
 
@@ -62,5 +61,6 @@ async def run_research_agent(topic: str, condition: ResearchCondition) -> Resear
     result = await research_agent.run(
         f"Research the following topic and produce a comprehensive analysis: {topic}",
         deps=deps,
+        model=config.get_model(),
     )
     return result.output
