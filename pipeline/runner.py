@@ -52,6 +52,7 @@ async def run_trial(
             research_output, review_condition
         )
         trial.review_decision = review_decision
+        trial.review_tool_called = tool_called
 
         if not tool_called:
             log_no_review(research_output.id, review_decision.reasoning)

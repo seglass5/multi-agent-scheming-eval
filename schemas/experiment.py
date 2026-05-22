@@ -16,4 +16,5 @@ class ExperimentTrial(BaseModel):
     review_condition: ReviewCondition
     research_output: ResearchOutput | None = None
     review_decision: ReviewDecision | None = None
+    review_tool_called: bool | None = None
     created_at: datetime = Field(default_factory=datetime.utcnow)
